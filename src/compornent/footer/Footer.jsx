@@ -1,52 +1,26 @@
 import React from "react";
+import style from "./Footer.module.css";
 import Footers1 from "./Footers1";
 import Footers2 from "./Footers2";
 import Footers3 from "./Footers3";
 import Footers4 from "./Footers4";
-import style from "./Footer.module.css";
 
-const Footer = (number, setnumber) => {
-  const FootersList = {
-    1: <Footers1 />,
-    2: <Footers2 />,
-    3: <Footers3 />,
-    4: <Footers4 />,
-  };
-
-  const changeFooter = (FooterIndex) => {
-    FootersList({ footer: FooterIndex });
-  };
-
+const Footer = () => {
   return (
     <footer className={style.footer}>
-      {/* {FootersList[number]}
-      <div className={style.footerButtons}>
-        <button
-          className={`${number === 1 ? "active" : ""}`}
-          onClick={() => changeFooter(setnumber(1))}
-        >
-          1
-        </button>
-        <button
-          className={`${number === 1 ? "active" : ""}`}
-          onClick={() => changeFooter(setnumber(2))}
-        >
-          2
-        </button>
-        <button
-          className={`${number === 1 ? "active" : ""}`}
-          onClick={() => changeFooter(setnumber(3))}
-        >
-          3
-        </button>
-        <button
-          className={`${number === 1 ? "active" : ""}`}
-          onClick={() => changeFooter(setnumber(4))}
-        >
-          4
-        </button>
+      {/* <div className={style.footerContents}>
+        <div className={style.footerTitle}> This is Footer</div>
+        <div className={style.footerTitle}>
+          그외에도 다양한 것들을 할 수 있습니다
+        </div>
       </div> */}
-      <Footers2 />
+      <Footers3 />
+      <div className="footerButtons">
+        <button> 1 </button>
+        <button> 2 </button>
+        <button> 3 </button>
+        <button> 4 </button>
+      </div>
     </footer>
   );
 };
