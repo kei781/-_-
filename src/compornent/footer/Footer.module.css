@@ -1,7 +1,7 @@
 .footer {
   height: 100px;
   margin-top: auto;
-  border: 2px solid red;
+  background-color: rgba(0, 0, 0, 0.45);
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -10,19 +10,20 @@
 .footerContents {
   height: 100%;
   margin-left: 20px;
-  border: 2px solid red;
 }
 
 .footerTitle {
+  width: 420px;
   font-weight: 600;
   font-size: clamp(0.5rem, 3vh, 1.4rem);
-  line-height: clamp(0.5rem, 3vh, 1.4rem);
-  border: 2px solid red;
+  line-height: clamp(0.6rem, 3vh, 1.5rem);
+  color: white;
+  text-transform: uppercase;
 }
 
 .footerButtons {
+  width: 120px;
   text-align: center;
-  border: 2px solid red;
 }
 .footerButtons > button {
   display: inline-block;
@@ -32,5 +33,4 @@
   width: 2rem;
   margin-left: 1rem;
   color: white;
-  -webkit-text-stroke: 1px #00000067;
 }

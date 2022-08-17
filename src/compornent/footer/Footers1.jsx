@@ -4,9 +4,9 @@ import style from "./Footer.module.css";
 const Footers1 = () => {
   return (
     <div className={style.footerContents}>
-      <div className={style.footerTitle}> This is Footer</div>
+      <div className={style.footerTitle}>Full-stack을 지향합니다.</div>
       <div className={style.footerTitle}>
-        그외에도 다양한 것들을 할 수 있습니다
+        Front, back, db까지. 다양한 것들을, 다양하게 수행합니다.
       </div>
     </div>
   );

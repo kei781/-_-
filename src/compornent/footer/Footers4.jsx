@@ -4,10 +4,8 @@ import style from "./Footer.module.css";
 const Footers4 = () => {
   return (
     <div className={style.footerContents}>
-      <div className={style.footerTitle}> This is Footer</div>
-      <div className={style.footerTitle}>
-        그외에도 다양한 것들을 할 수 있습니다
-      </div>
+      <div className={style.footerTitle}>proficient skill</div>
+      <div className={style.footerTitle}>sql, express, react</div>
     </div>
   );
 };
