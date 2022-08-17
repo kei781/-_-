@@ -1,15 +1,21 @@
 import React from "react";
-import "./content.css";
+import Contents1 from "./Contents1";
+import Contents2 from "./Contents2";
+import Contents3 from "./Contents3";
+import Contents4 from "./Contents4";
 
-const Content = () => {
+const Content = (number) => {
+  const ContentsList = {
+    1: <Contents1 />,
+    2: <Contents2 />,
+    3: <Contents3 />,
+    4: <Contents4 />,
+  };
+
   return (
-    <div className="textbox">
-      <h1 className="title">This is main1</h1>
-      <h1 className="subtitle">Lorem1</h1>
-      <h2 className="content">
-        Lorem1 ipsum dolor sit amet consectetur adipisicing elit. Placeat
-        dolorum beatae
-      </h2>
+    <div>
+      {/* {ContentsList[number]} */}
+      <Contents2 />
     </div>
   );
 };

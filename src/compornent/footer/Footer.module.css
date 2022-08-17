@@ -1,0 +1,36 @@
+.footer {
+  height: 100px;
+  margin-top: auto;
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footerContents {
+  height: 100%;
+  margin-left: 20px;
+  border: 2px solid red;
+}
+
+.footerTitle {
+  font-weight: 600;
+  font-size: clamp(0.5rem, 3vh, 1.4rem);
+  line-height: clamp(0.5rem, 3vh, 1.4rem);
+  border: 2px solid red;
+}
+
+.footerButtons {
+  text-align: center;
+  border: 2px solid red;
+}
+.footerButtons > button {
+  display: inline-block;
+  font-size: clamp(1.2rem, 5vw, 2.4rem);
+  line-height: clamp(1.2rem, 5vw, 2.4rem);
+  height: 1rem;
+  width: 2rem;
+  margin-left: 1rem;
+  color: white;
+  -webkit-text-stroke: 1px #00000067;
+}

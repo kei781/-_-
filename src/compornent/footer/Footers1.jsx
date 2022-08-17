@@ -1,14 +1,14 @@
 import React from "react";
-import "./Footer.css";
+import style from "./Footer.module.css";
 
 const Footers1 = () => {
   return (
-    <footer className="footer">
-      <div className="footerContents">
-        <h2 className="footerTitle"> This is Footer1</h2>
-        <h2 className="footerTitle"> 1그외에도 다양한 것들을 할 수 있습니다</h2>
+    <div className={style.footerContents}>
+      <div className={style.footerTitle}> This is Footer</div>
+      <div className={style.footerTitle}>
+        그외에도 다양한 것들을 할 수 있습니다
       </div>
-    </footer>
+    </div>
   );
 };
 
